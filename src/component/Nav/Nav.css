@@ -1,0 +1,124 @@
+.navbar {
+  background: #fff;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+  height: 120px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  z-index: 999;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: auto;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #fff;
+}
+
+nav img {
+  height: 65px;
+  margin-left: 25px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+nav ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li ul li a {
+  padding: 10px 20px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 700;
+  color: #000 !important;
+  margin-left: 25px !important;
+}
+
+.navbar.scrolled {
+  height: 67px;
+}
+
+.navbar.scrolled a.navbar-brand img {
+  width: 126px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar.scrolled {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .dunno {
+    margin-right: 25px;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+  }
+
+  .leora {
+    margin: 5px auto;
+  }
+}
+.hidenSearch {
+  background-color: #000;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: blue;
+  color: #fff;
+}
+select#language {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  /* width: 200px; */
+  /* max-width: 100%; */
+  margin-right: 10px;
+}

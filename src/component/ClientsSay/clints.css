@@ -1,0 +1,13 @@
+.lawra{
+    display: flex !important;
+    justify-self:center;
+    align-items: center !important;
+    margin-top: 20px;
+    flex-direction: column !important;
+}
+.lawra p{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: left !important;
+}

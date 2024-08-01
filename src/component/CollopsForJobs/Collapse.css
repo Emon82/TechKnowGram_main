@@ -1,0 +1,19 @@
+.collapse-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .collapse-button:hover {
+    background-color: #ddd;
+  }
+  
+  .collapse-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+  

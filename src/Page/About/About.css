@@ -1,0 +1,91 @@
+.membershiblogo {
+  /* width: 100%; */
+  height: 45px;
+  margin: 10px;
+}
+.container {
+  font-family: Roboto;
+}
+
+.rowGrid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr 4fr;
+}
+
+@media screen and (max-width: 1024px) {
+  .rowGrid {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rowGrid {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .rowGrid {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 100%;
+  }
+}
+
+.owner-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.owner-profile img {
+  width: 200px;
+  height: 190px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.owner-profile h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.owner-profile h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.owner-profile .description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .owner-profile {
+    margin-top: 20px;
+  }
+  
+  .owner-profile img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .owner-profile h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .owner-profile h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .owner-profile .description {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+}
+

@@ -1,0 +1,40 @@
+.membershiblogo {
+    /* width: 100%; */
+    height: 45px;
+    margin: 10px;
+  }
+  .container {
+    font-family: Roboto;
+  }
+  
+  .rowGrid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr 4fr;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .rowGrid {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .rowGrid {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .rowGrid {
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: 100%;
+    }
+  }
+
+  .pdf {
+    color: blue;
+    text-decoration: underline !important;
+  }
+  

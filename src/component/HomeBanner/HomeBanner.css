@@ -1,0 +1,38 @@
+.header {
+  /* background-image: url(../../assets/Image/homeBanner.jpg); */
+  background-repeat: no-repeat;
+  height: 650px;
+  max-width: 100%;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 345px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    height: 150px;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .p-on-desktop {
+    padding-top: 120px;
+  }
+}
