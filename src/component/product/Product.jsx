@@ -82,7 +82,7 @@ function ProductItem({ item, t }) {
             <a
               style={{ textDecoration: "none" }}
               href={item.link}
-              target="_blank"
+              target=""
               rel="noreferrer"
             >
               {" "}
@@ -201,7 +201,7 @@ function ProductSlide({ t }) {
       src: require("../../assets/Image/Product/freelanching.png"),
     },
     {
-      link: "https://bms.com/",
+      link: "#",
       title: "BMS",
       text: t("BMS"),
       text1: t("BMS2"),
@@ -229,7 +229,7 @@ function ProductSlide({ t }) {
       src: require("../../assets/Image/prostuti1.png"),
     },
     {
-      link: "https://techknowgram/",
+      link: "#",
       title: "KHOZ",
       text: t("Khoz"),
       text1: t("Khoz2"),
