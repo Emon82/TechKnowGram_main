@@ -4,7 +4,7 @@ import React from "react";
 function Coursal() {
   const logo = [
     {
-      logo: require("../../assets/Image/side7.jpg"),
+      logo: require("../../assets/Image/Mdaward.jpg"),
     },
     {
       logo: require("../../assets/Image/md2.png"),
