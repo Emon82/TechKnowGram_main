@@ -33,8 +33,8 @@ const MemberShays = [
   },
   {
     text: "  Advisor",
-    title: "Faruque Hossain",
-    src: require("../../assets/Image/member1.jpg"),
+    title: "Ray Daud",
+    src: require("../../assets/Image/leader5.jpg"),
   },
   {
     text: "  Advisor",
