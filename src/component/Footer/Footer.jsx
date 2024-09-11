@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./Footer.css";
+import flagbd from "../../assets/Image/Product/Flag/bangladesh.png"
+import flagjp from "../../assets/Image/Product/Flag/japan.png";
+import flagusa from "../../assets/Image/Product/Flag/united-states.png";
 
 const certification = [
   {
@@ -20,75 +23,91 @@ function Footer({ t }) {
       <div className="container-fluid px-5">
         <div className="row justify-content-center">
           <div className="col-md-2">
-            <h4>{t("abus")}</h4>
-            <p>
+            <h6>{t("abus")}</h6>
+            <p style={{ fontSize: "12px" }}>
               {t("FooterAboutOne")}
               {!about && ".."}
-              {about && <p>{t("FooterAboutTwo")}</p>}{" "}
-              <p
+              {about && <span>{t("FooterAboutTwo")}</span>}{" "}
+              <span
                 onClick={goToabout}
-                style={{ color: "aquamarine", cursor: "pointer" }}
+                style={{
+                  color: "aquamarine",
+                  cursor: "pointer",
+                  display: "inline",
+                }}
               >
                 {about ? t("readless") : t("readmore")}
-              </p>
+              </span>
             </p>
           </div>
           <div className="col-md-2">
             <a href="/" style={{ textDecoration: "none" }}>
-              <h3
+              <h6
                 className="techknow"
                 style={{ color: "white", cursor: "pointer" }}
               >
-                TechKnowGram Limited
-              </h3>
+                TechKnowGram Ltd.{" "}
+                <img
+                  src={flagbd}
+                  alt=""
+                  style={{ height: "15px ", width: "15px" }}
+                />
+              </h6>
             </a>
-            <p>
+            <p style={{ fontSize: "12px", lineHeight: "18px" }}>
               {t("AddressLineOne")}
               <br /> {t("AddressLineTwo")}
               <br />
-              {t("AddressContact")}
+              {/* {t("AddressContact")}
               <br /> {t("AddressMobileWhatsApp")} <br />
-              {t("AddressEmail")}
+              {t("AddressEmail")} */}
             </p>
           </div>
           <div className="col-md-2">
             <a href="/" style={{ textDecoration: "none" }}>
-              <h3
+              <h6
                 className="techknow"
                 style={{ color: "white", cursor: "pointer" }}
               >
-                合同会社TechKnowGram
-              </h3>
+                TechKnowGram 合同会社{" "}
+                <img
+                  src={flagjp}
+                  alt=""
+                  style={{ height: "15px ", width: "15px" }}
+                />
+              </h6>
             </a>
-            <p>
+            <p style={{ fontSize: "12px" }}>
               東京都世田谷区尾山台
               <br /> 1丁目10番4号, 日本
               <br />
-              {t("AddressContact")}
-              <br /> {t("AddressMobileWhatsApp")} <br />
-              {t("AddressEmail")}
             </p>
           </div>
           <div className="col-md-2">
             <a href="/" style={{ textDecoration: "none" }}>
-              <h3
+              <h6
                 className="techknow"
                 style={{ color: "white", cursor: "pointer" }}
               >
-                TechKnowGram LLC
-              </h3>
+                TechKnowGram LLC{" "}
+                <img
+                  src={flagusa}
+                  alt=""
+                  style={{ height: "15px ", width: "15px" }}
+                />
+              </h6>
             </a>
-            <p>
+            <p style={{ fontSize: "12px" }}>
               1209 Mountain Road PL NE, STE R,
               <br /> Albuquerque, NM 87110, USA
               <br />
-              {t("AddressContactForUSA")}
+              {/* {t("AddressContactForUSA")}
               <br /> {t("AddressMobileWhatsAppForUSA")} <br />
-              {t("AddressEmail")}
+              {t("AddressEmail")} */}
             </p>
           </div>
           <div className="col-md-2 ">
-            <h4>{t("cont")}</h4>
+            <h6 style={{ fontSize: "18px" }}>{t("cont")}</h6>
             <ul className="social-icons">
               <li>
                 <a href="https://www.facebook.com/TechKnowGramLTD">
@@ -106,16 +125,23 @@ function Footer({ t }) {
                 </a>
               </li>
             </ul>
+          </div>
+          <div className="col-md-2">
             <div className="row">
               {certification.map((src) => (
                 <div className=" certification">
                   <img
-                    style={{ borderRadius: "10px", height: "50px" }}
+                    style={{ borderRadius: "10px", height: "35px" }}
                     src={src.src}
                     alt="TechKnowGram Limited: Solution | Performance | Comfort"
                   />
                 </div>
               ))}
+            </div>
+            <div className="" style={{ fontSize: "12px", marginTop: "10px" }}>
+              {t("AddressContact")} <br />
+              {/* <br /> {t("AddressMobileWhatsApp")} <br /> */}
+              {t("AddressEmail")}
             </div>
           </div>
         </div>
