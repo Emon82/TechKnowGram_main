@@ -12,11 +12,7 @@
   z-index: 999;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar {
-    height: auto;
-  }
-}
+
 
 nav {
   display: flex;
@@ -83,26 +79,10 @@ nav ul li ul li a {
 }
 
 .navbar.scrolled a.navbar-brand img {
-  width: 126px;
+  width: 126px ;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar.scrolled {
-    height: auto;
-    margin-top: 10px;
-  }
 
-  .dunno {
-    margin-right: 25px;
-    display: flex !important;
-    justify-content: flex-end !important;
-    align-items: center !important;
-  }
-
-  .leora {
-    margin: 5px auto;
-  }
-}
 .hidenSearch {
   background-color: #000;
 }
@@ -122,3 +102,70 @@ select#language {
   /* max-width: 100%; */
   margin-right: 10px;
 }
+.logonav {
+  max-height: 50px ;
+}
+/* Media Quary */
+
+
+/* 768 */
+@media screen and (max-width: 768px) {
+  .navbar.scrolled {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    height: auto;
+    width: 100%;
+  }
+
+  .dunno {
+    margin-right: 25px;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+  }
+
+  .leora {
+    margin: 5px auto;
+  }
+}
+
+/* 1024 */
+
+@media (min-width: 1024px) {
+  .logonav {
+    max-height: 34px;
+  
+  }
+
+  nav img {
+  /* height: 65px; */
+  margin-left: 10px;
+}
+  
+  .navbar.scrolled a.navbar-brand img {
+    width: 94px;
+
+  }
+  .fontsize{
+    font-size: 12px;
+  }
+}
+
+
+/* 1440 */ 
+
+
+@media (min-width: 1440px) {
+  .logonav {
+    max-height: 50px;
+  }
+  .navbar.scrolled a.navbar-brand img {
+    width: 126px;
+  }
+    .fontsize{
+    font-size: 15px ;
+  }
+  }

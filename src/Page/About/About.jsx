@@ -47,7 +47,9 @@ export default function About({ t, changeLn, selectedLanguage }) {
   return (
     <div>
       <Helmet>
-        <title>TechKnowGram Limited Leading software company in Bangladesh </title>
+        <title>
+          TechKnowGram Limited Leading software & AI company in Bangladesh{" "}
+        </title>
         <meta
           name="description"
           content="TechKnowGram Limited is a leading software company specializing in cutting-edge solutions for businesses. We provide innovative software development, web development, and mobile app development services tailored to meet our clients' needs."
@@ -55,7 +57,7 @@ export default function About({ t, changeLn, selectedLanguage }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="TechKnowGram Limited Leading software company in Bangladesh"
+          content="TechKnowGram Limited Leading software & AI company in Bangladesh"
         />
         <meta
           property="og:description"
@@ -104,7 +106,7 @@ export default function About({ t, changeLn, selectedLanguage }) {
           />
           <h2>Ahmedul Islam BABU</h2>
           <h3>Founder and CEO</h3>
-          <p className="description" style={{textAlign:"start"}}>
+          <p className="description" style={{ textAlign: "start" }}>
             {t("AboutBabuSan")}
             {!aboutBabuSan && "..."}
             {aboutBabuSan && t("AboutBabuSanReadmore")}
@@ -117,12 +119,18 @@ export default function About({ t, changeLn, selectedLanguage }) {
           </p>
         </div>
         <div>
-          <h1 className="text-center" style={{ margin: "20px", fontFamily: "auto" }}>
+          <h1
+            className="text-center"
+            style={{ margin: "20px", fontFamily: "auto" }}
+          >
             {t("Leadership")}
           </h1>
           <Members />
         </div>
-        <h1 className="text-center" style={{ margin: "20px", fontFamily: "auto" }}>
+        <h1
+          className="text-center"
+          style={{ margin: "20px", fontFamily: "auto" }}
+        >
           {t("Member")}
         </h1>
         <div

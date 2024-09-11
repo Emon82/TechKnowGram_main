@@ -201,7 +201,9 @@ export default function Clients({ t, changeLn, selectedLanguage }) {
   return (
     <div>
       <Helmet>
-        <title>TechKnowGram Limited Leading software company in Bangladesh </title>
+        <title>
+          TechKnowGram Limited Leading software & AI company in Bangladesh{" "}
+        </title>
         <meta
           name="description"
           content="TechKnowGram Limited is a leading software company specializing in cutting-edge solutions for businesses. We provide innovative software development, web development, and mobile app development services tailored to meet our clients' needs."
@@ -264,6 +266,29 @@ export default function Clients({ t, changeLn, selectedLanguage }) {
             <img
               style={{ heigth: "100px", width: "100px" }}
               src={require("../../assets/Image/03.png")}
+              alt="TechKnowGram Limited: Solution | Performance | Comfort"
+            />
+          </div>
+
+          <div className="col-6 col-md-2 text-center">
+            <img
+              style={{ heigth: "", width: "120px" }}
+              src={require("../../assets/Image/clients/client1.jpg")}
+              alt="TechKnowGram Limited: Solution | Performance | Comfort"
+            />
+          </div>
+
+          <div className="col-6 col-md-2 text-center">
+            <img
+              style={{ heigth: "", width: "180px" }}
+              src={require("../../assets/Image/clients/client3.jpg")}
+              alt="TechKnowGram Limited: Solution | Performance | Comfort"
+            />
+          </div>
+          <div className="col-6 col-md-2 text-center">
+            <img
+              style={{ heigth: "", width: "120px" }}
+              src={require("../../assets/Image/clients/client4.jpg")}
               alt="TechKnowGram Limited: Solution | Performance | Comfort"
             />
           </div>
@@ -631,6 +656,7 @@ export default function Clients({ t, changeLn, selectedLanguage }) {
               alt="TechKnowGram Limited: Solution | Performance | Comfort"
             />
           </div>
+
           <div className="col-6 col-md-2 text-center">
             <img
               style={{ heigth: "170px", width: "180px" }}

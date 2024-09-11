@@ -21,13 +21,14 @@
 @media screen and (max-width: 768px) {
   .header {
     height: 250px;
+    margin-top: 60px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .header {
     height: 150px;
-    margin-top: 150px;
+    /* margin-top: 150px; */
   }
 }
 

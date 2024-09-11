@@ -1,0 +1,51 @@
+
+
+
+ @media (min-width: 320px)  {
+
+       .carousel-item img{
+    height:200px;
+     width: 100%;
+}
+    }
+ @media (min-width: 375px)  {
+
+       .carousel-item img{
+    height:230px;
+     width: 100%;
+}
+    }
+
+    @media (min-width: 425px)  {
+
+       .carousel-item img{
+    height:275px;
+     width: 100%;
+}
+    }
+
+     @media (min-width: 768px)  {
+
+       .carousel-item img{
+    height:195px;
+     width: 100%;
+}
+
+
+    }
+
+     @media (min-width: 1024px)  {
+
+       .carousel-item img{
+    height:275px;
+     width: 100%;
+}
+    }
+
+     @media (min-width: 1440px)  {
+
+       .carousel-item img{
+    height:315px;
+    width: 100%;
+}
+    }

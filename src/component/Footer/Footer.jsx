@@ -17,9 +17,9 @@ function Footer({ t }) {
   };
   return (
     <footer className="footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-3">
+      <div className="container-fluid px-5">
+        <div className="row justify-content-center">
+          <div className="col-md-2">
             <h4>{t("abus")}</h4>
             <p>
               {t("FooterAboutOne")}
@@ -33,7 +33,7 @@ function Footer({ t }) {
               </p>
             </p>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-2">
             <a href="/" style={{ textDecoration: "none" }}>
               <h3
                 className="techknow"
@@ -51,7 +51,7 @@ function Footer({ t }) {
               {t("AddressEmail")}
             </p>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-2">
             <a href="/" style={{ textDecoration: "none" }}>
               <h3
                 className="techknow"
@@ -69,7 +69,25 @@ function Footer({ t }) {
               {t("AddressEmail")}
             </p>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-2">
+            <a href="/" style={{ textDecoration: "none" }}>
+              <h3
+                className="techknow"
+                style={{ color: "white", cursor: "pointer" }}
+              >
+                TechKnowGram LLC
+              </h3>
+            </a>
+            <p>
+              1209 Mountain Road PL NE, STE R,
+              <br /> Albuquerque, NM 87110, USA
+              <br />
+              {t("AddressContactForUSA")}
+              <br /> {t("AddressMobileWhatsAppForUSA")} <br />
+              {t("AddressEmail")}
+            </p>
+          </div>
+          <div className="col-md-2 ">
             <h4>{t("cont")}</h4>
             <ul className="social-icons">
               <li>

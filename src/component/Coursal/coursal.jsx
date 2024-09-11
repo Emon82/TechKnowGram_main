@@ -1,5 +1,10 @@
+import { height } from "@fortawesome/free-solid-svg-icons/fa0";
 import React from "react";
 // import './jabad.css'
+import './coursal.css';
+
+
+
 
 function Coursal() {
   const logo = [

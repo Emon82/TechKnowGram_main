@@ -1,31 +1,169 @@
-.lara1{
-    margin-top: 20px;
-    height: 380px;
-    display: flex;
-    transition: transform 0.5s, box-shadow 0.2s;
-    /* justify-content: center; */
-    align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+/* Enhanced product.css (preserving image styles) */
+
+:root {
+  --card-margin-top: 20px;
+  --hover-transform: -9px;
+  --transition-duration: 0.5s;
+  --box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  --hover-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  --card-border-radius: 10px;
 }
 
-.services{
-    margin-top: 20px;
-    height: 350px;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    transition: transform 0.5s, box-shadow 0.2s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-.lara1:hover{
-    transform: translateY(-9px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
-.services:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-
+.col-md-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 15px;
 }
 
+.lara1,
+.services {
+  margin-top: var(--card-margin-top);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-duration), box-shadow 0.2s;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.lara1 {
+  height: 300px;
+}
+
+.services {
+  height: 300px;
+}
+
+.lara1:hover,
+.services:hover {
+  transform: translateY(var(--hover-transform));
+  box-shadow: var(--hover-box-shadow);
+}
+
+/* We're not modifying the card-img-top styles to preserve your specific image dimensions */
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.card-title a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.card-title a:hover {
+  color: #007bff;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+  flex-grow: 1;
+  line-height: 1.5;
+}
+
+.card-text span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.card-text span:hover {
+  color: #0056b3;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  color:white;
+  font-size: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .col-md-3 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  .lara1,
+  .services {
+    height: auto;
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  :root {
+    --hover-transform: -5px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .card-text {
+    font-size: 0.85rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+}
+.serviceImage,
+.productImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+@media screen and (max-width: 768px) {
+  .serviceImage,
+  .productImage {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+@media (max-width: 600px) {
+  .productImage img[alt="KHOZ"] {
+    padding: 25px 100px !important;
+  }
+}

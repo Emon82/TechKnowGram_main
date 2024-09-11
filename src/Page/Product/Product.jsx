@@ -10,7 +10,10 @@ export default function Product({ t, changeLn, selectedLanguage }) {
   return (
     <div>
       <Helmet>
-        <title> TechKnowGram Limited Leading software company in Bangladesh </title>
+        <title>
+          {" "}
+          TechKnowGram Limited Leading software & AI company in Bangladesh{" "}
+        </title>
         <meta
           name="description"
           content="TechKnowGram Limited is a leading software company specializing in cutting-edge solutions for businesses. We provide innovative software development, web development, and mobile app development services tailored to meet our clients' needs."
@@ -18,7 +21,7 @@ export default function Product({ t, changeLn, selectedLanguage }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" TechKnowGram Limited Leading software company in Bangladesh"
+          content=" TechKnowGram Limited Leading software & AI company in Bangladesh"
         />
         <meta
           property="og:description"
